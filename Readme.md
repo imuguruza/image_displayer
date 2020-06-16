@@ -45,3 +45,6 @@ More info about the design, in my blog!
 
 The script `serial_img_send` sends images that are split in lines and coded in hex format, but without `0x`. This is because of verilog `$readmemh` used to store the
 default image in RAM at synth.
+
+A more flexible script that accepts lists split by commas and other formats would be
+a good to have.
