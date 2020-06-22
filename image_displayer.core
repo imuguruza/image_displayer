@@ -26,8 +26,8 @@ filesets:
       - rtl/vga_sync.v
       - rtl/image_displayer.v
       - bench/image_displayer_tb.v
-      - data/test.mem : {copyto : test.mem, file_type : file}     #TODO, which kind of file_type is the RAM init file?
-      - data/bender.mem : {copyto : bender.mem, file_type : file} #TODO, which kind of file_type is the RAM init file?
+      - data/test.mem : {file_type : user, copyto : test.mem}
+      - data/bender.mem : {file_type : user, copyto : bender.mem}
     file_type : verilogSource
 
   top:
@@ -39,7 +39,7 @@ filesets:
       - rtl/vga_sync.v
       - rtl/pll.v
       - rtl/image_displayer.v
-      - data/bender.mem : {copyto : bender.mem, file_type : file} #TODO, which kind of file_type is the RAM init file?
+      - data/bender.mem : {file_type : user, copyto : bender.mem}
     file_type : verilogSource
 
 targets:
